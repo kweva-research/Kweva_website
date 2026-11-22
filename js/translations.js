@@ -545,3 +545,12 @@ Object.assign(kwevaEnglish, {
   "Transformamos dados em decisões e soluções inteligentes.": "We turn data into decisions and intelligent solutions.",
   "Combinamos investigação científica, análise de dados e tecnologias digitais para apoiar instituições públicas, empresas privadas e organizações de desenvolvimento na resolução de desafios e na tomada de decisões fundamentadas em evidências.": "We combine scientific research, data analysis and digital technologies to support public institutions, private companies and development organisations in addressing challenges and making evidence-based decisions.",
 });
+Object.assign(kwevaEnglish, {
+  "Sistemas Digitais e Automação": "Digital Systems & Automation",
+  "Implementamos e integramos sistemas digitais de recolha e gestão de dados, automatizamos processos e desenvolvemos soluções de monitoria para melhorar a eficiência, a qualidade da informação e a tomada de decisões.": "We implement and integrate digital data collection and management systems, automate workflows, and develop monitoring solutions to improve efficiency, data quality, and decision-making.",
+  "Soluções digitais ajustadas à sua organização.": "Digital solutions tailored to your organisation.",
+  "Sistemas de recolha": "Data collection systems",
+  "Gestão e integração": "Management and integration",
+  "Automação e monitoria": "Automation and monitoring",
+  "Pedir uma proposta": "Request a proposal",
+});
