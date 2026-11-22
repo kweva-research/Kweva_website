@@ -20,7 +20,14 @@
 .about-team .button{flex-shrink:0;font-size:14px}
 .about-vision-mission{padding-block:88px;background:#eef8f3}
 .about-vision-mission-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
-.about-vision-mission article{background:#fff;border-top:var(--accent-rule);padding:36px 40px}
+.about-vision-mission article{background:#fff;border-top:var(--accent-rule);padding:36px 40px;position:relative}
+.about-card-icon{display:grid;place-items:center;width:58px;height:58px;margin-bottom:22px;border:1px solid #b8dada;border-radius:50%;background:#eef8f7;color:#087b80}
+.about-card-icon svg{width:28px;height:28px}
+.about-page .about-principle-grid article{position:relative;display:grid;grid-template-columns:50px minmax(0,1fr);column-gap:18px;align-items:start;border-top:0;padding:28px;border:1px solid #dce8eb;border-radius:14px;background:#fff}
+.about-value-icon{grid-row:1 / span 2;display:grid;place-items:center;width:50px;height:50px;border-radius:50%;background:#eef8f7;color:#087b80}
+.about-value-icon svg{width:24px;height:24px}
+.about-page .about-principle-grid article h3{margin:0 0 10px}
+.about-page .about-principle-grid article p{grid-column:2}
 .about-vision-mission h2{font-size:var(--type-card-title);line-height:1.35;margin:0 0 18px}
 .about-vision-mission p:last-child{margin:0;color:#435d68;line-height:1.5556}
 .about-page .about-principle-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
@@ -35,4 +42,7 @@
  .about-vision-mission{padding-block:48px}
  .about-vision-mission-grid,.about-page .about-principle-grid{grid-template-columns:1fr;gap:20px}
  .about-vision-mission article{padding:28px 24px}
+ .about-card-icon{width:52px;height:52px}
+ .about-page .about-principle-grid article{grid-template-columns:44px minmax(0,1fr);padding:22px}
+ .about-value-icon{width:44px;height:44px}
 }
