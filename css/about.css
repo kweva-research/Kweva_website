@@ -31,7 +31,21 @@
 .about-vision-mission h2{font-size:var(--type-card-title);line-height:1.35;margin:0 0 18px}
 .about-vision-mission p:last-child{margin:0;color:#435d68;line-height:1.5556}
 .about-page .about-principle-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
-@media(max-width:991px){.about-context-layout{gap:40px}.about-principle-grid{gap:32px}.about-vision-mission-grid{gap:32px}.about-page .about-principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.about-breadcrumb{background:#eef8f8;border-bottom:1px solid #dce8eb}
+.about-breadcrumb .container{display:flex;align-items:center;gap:12px;min-height:62px;font-size:14px;color:#687b83}
+.about-breadcrumb a{color:#087b80;font-weight:700}
+.about-breadcrumb span[aria-hidden]{color:#9bb0b5}
+.about-page .about-intro-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px;align-items:center}
+.about-page .about-intro-layout .about-intro-copy{width:auto;max-width:none;margin:0}
+.about-intro-visual{margin:0;min-height:380px}
+.about-intro-visual img{width:100%;height:380px;object-fit:cover;border-radius:4px}
+.about-vision-mission{padding-block:72px;background:#eef8f3}
+.about-vision-mission-grid{gap:32px}
+.about-vision-mission article{min-height:0;padding:32px 36px;border:1px solid #dce8eb;border-top:5px solid #087b80;border-radius:4px}
+.about-principles h2{text-align:left}
+.about-page .about-principle-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.about-page .about-principle-grid article{min-height:180px;grid-template-columns:48px minmax(0,1fr);gap:14px;border-radius:4px}
+@media(max-width:991px){.about-context-layout{gap:40px}.about-principle-grid{gap:32px}.about-vision-mission-grid{gap:32px}.about-page .about-principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-page .about-intro-layout{grid-template-columns:1fr;gap:32px}.about-intro-visual{min-height:300px}.about-intro-visual img{height:300px}}
 @media(max-width:767px){
  .about-page :is(.about-intro,.about-context,.about-principles){padding-block:48px}
  .about-page .about-intro .about-intro-copy{width:calc(100% - 36px)}
@@ -45,4 +59,7 @@
  .about-card-icon{width:52px;height:52px}
  .about-page .about-principle-grid article{grid-template-columns:44px minmax(0,1fr);padding:22px}
  .about-value-icon{width:44px;height:44px}
+ .about-breadcrumb .container{min-height:52px}
+ .about-intro-visual{min-height:220px}
+ .about-intro-visual img{height:220px}
 }
