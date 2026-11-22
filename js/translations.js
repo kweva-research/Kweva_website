@@ -421,8 +421,7 @@ const kwevaEnglish = {
   "Desenhamos estudos quantitativos e qualitativos para compreender o contexto e responder às perguntas do seu projeto.": "We design quantitative and qualitative studies to understand the context and answer your project questions.",
   "Análise de dados e IA": "Analytics and AI",
   "Exploramos aplicações de inteligência artificial na análise de texto, organização de dados e síntese de evidência, com revisão humana.": "We explore applications of artificial intelligence in text analysis, data organisation and evidence synthesis, with human review.",
-  "Implementamos e integramos sistemas digitais de recolha e gestão de dados, automatizamos processos e desenvolvemos soluções de monitoria.": "We implement and integrate digital data collection and management systems, automate workflows, and develop monitoring solutions.",
-
+  "Implementamos e integramos sistemas digitais de recolha e gestão de dados, automatizamos processos e desenvolvemos soluções de monitoria.": "We implement and integrate digital data collection and management systems, automate processes, and develop monitoring solutions.",
   "Uma consultora moçambicana.": "A Mozambican consultancy.",
   "Como colaboramos": "How we collaborate",
   "Um trabalho construído consigo.": "Working together, from the start.",
@@ -513,4 +512,26 @@ Object.assign(kwevaEnglish, {
   "Mensagem *": "Message *",
   "Enviar mensagem": "Send message",
   "Proposta — Sistemas Digitais e Automação": "Proposal — Digital Systems & Automation",
+});
+
+Object.assign(kwevaEnglish, {
+  "Nossa visão": "Our vision",
+  "Evidência útil para decisões mais seguras.": "Useful evidence for safer decisions.",
+  "Ser uma referência em investigação aplicada, análise de dados e monitoria e avaliação em Moçambique, contribuindo para soluções relevantes e decisões sustentadas em conhecimento.": "To be a reference for applied research, data analysis and monitoring and evaluation in Mozambique, contributing to relevant solutions and decisions grounded in knowledge.",
+  "Nossa missão": "Our mission",
+  "Ajudar organizações a transformar dados em ação.": "Help organisations turn data into action.",
+  "Apoiar instituições públicas, privadas e organizações de desenvolvimento através de métodos rigorosos, tecnologias digitais e comunicação clara dos resultados.": "Support public institutions, private organisations and development organisations through rigorous methods, digital technologies and clear communication of findings.",
+  "Nossos valores.": "Our values.",
+  "Integridade": "Integrity",
+  "Agimos com transparência, responsabilidade e respeito pelos dados, pelas pessoas e pelas organizações.": "We act with transparency, responsibility and respect for data, people and organisations.",
+  "Rigor": "Rigour",
+  "Aplicamos métodos adequados, verificamos a qualidade da informação e distinguimos evidência de suposição.": "We apply appropriate methods, verify information quality and distinguish evidence from assumptions.",
+  "Colaboração": "Collaboration",
+  "Trabalhamos em proximidade com as equipas para construir soluções relevantes e resultados compreensíveis.": "We work closely with teams to build relevant solutions and understandable results.",
+  "Clareza": "Clarity",
+  "Comunicamos resultados de forma acessível, útil e orientada para decisões.": "We communicate findings in an accessible, useful and decision-focused way.",
+  "Inovação": "Innovation",
+  "Combinamos investigação, tecnologia e criatividade para responder melhor a desafios complexos.": "We combine research, technology and creativity to respond better to complex challenges.",
+  "Impacto": "Impact",
+  "Focamos em conhecimento que pode ser aplicado, acompanhado e convertido em ação.": "We focus on knowledge that can be applied, monitored and converted into action.",
 });

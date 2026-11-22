@@ -18,7 +18,13 @@
 .about-team-inner{display:flex;justify-content:space-between;align-items:center;gap:40px;border-top:1px solid #dce8eb;padding-block:48px 64px}
 .about-page .about-team h2{font-size:var(--type-section-title);margin:0}
 .about-team .button{flex-shrink:0;font-size:14px}
-@media(max-width:991px){.about-context-layout{gap:40px}.about-principle-grid{gap:32px}}
+.about-vision-mission{padding-block:88px;background:#eef8f3}
+.about-vision-mission-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
+.about-vision-mission article{background:#fff;border-top:var(--accent-rule);padding:36px 40px}
+.about-vision-mission h2{font-size:var(--type-card-title);line-height:1.35;margin:0 0 18px}
+.about-vision-mission p:last-child{margin:0;color:#435d68;line-height:1.5556}
+.about-page .about-principle-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+@media(max-width:991px){.about-context-layout{gap:40px}.about-principle-grid{gap:32px}.about-vision-mission-grid{gap:32px}.about-page .about-principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:767px){
  .about-page :is(.about-intro,.about-context,.about-principles){padding-block:48px}
  .about-page .about-intro .about-intro-copy{width:calc(100% - 36px)}
@@ -26,4 +32,7 @@
  .about-context-copy{max-width:none}
  .about-principle-grid{margin-top:32px}
  .about-team-inner{align-items:flex-start;flex-direction:column;gap:24px;padding-block:32px 48px}
+ .about-vision-mission{padding-block:48px}
+ .about-vision-mission-grid,.about-page .about-principle-grid{grid-template-columns:1fr;gap:20px}
+ .about-vision-mission article{padding:28px 24px}
 }
