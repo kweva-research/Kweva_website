@@ -4,6 +4,16 @@
  if (reducedMotion.matches || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
  const seen = new WeakSet();
  const selector = 'main .section-heading, main .home-hero-panel, main .home-pillars h2, main .home-pillars-grid article, main .who-copy, main .who-backdrop, main .card, main .person-card, main .news-card, main .home-sector-card, main .services-list, main .process-list li, main .why-kweva-reasons article';
+ const aboutSelector = [
+  '.about-intro-copy',
+  '.about-intro-visual',
+  '.about-vision-mission-grid',
+  '.about-principles h2',
+  '.about-principle-grid article',
+  '.about-team h2',
+  '#partners-section > .container',
+  '.about-contact-cta > .container'
+ ].map(part => '.about-page main ' + part).join(', ');
  const observer = new IntersectionObserver(entries => {
   for (const entry of entries) {
    if (!entry.isIntersecting) continue;
@@ -16,7 +26,7 @@
   }
  }, { threshold: 0.08 });
  function register() {
-  document.querySelectorAll(selector).forEach(element => {
+  document.querySelectorAll(selector + ', ' + aboutSelector).forEach(element => {
    if (seen.has(element)) return;
    seen.add(element);
    observer.observe(element);

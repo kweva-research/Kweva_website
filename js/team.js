@@ -17,7 +17,16 @@
    else ph.textContent=initials(m.name||'');
    const body=el('div','body');
    body.append(el('h3','',m.name||''),el('p','role',pick(m.role,l)));
-   const more=el('button','person-more',l==='en'?'Read more':'Ver mais');
+   const hasProfile=typeof m.profile==='string' && /^[a-z0-9-]+\.html$/.test(m.profile);
+   const more=el(hasProfile?'a':'button','person-more',l==='en'?'Read more':'Ver mais');
+   if(hasProfile){
+    const profileUrl=new URL(m.profile,document.baseURI);
+    if(document.querySelector('base'))profileUrl.pathname=profileUrl.pathname.replace(/\.html$/,'/');
+    more.href=profileUrl.href;
+    body.appendChild(more);
+    card.append(ph,body);grid.appendChild(card);
+    return;
+   }
    more.type='button';
    const content=el('div','person-profile-content');
    content.id='person-biography-'+index;

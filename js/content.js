@@ -16,7 +16,7 @@
     if(n.date){const d=new Date(n.date);c.appendChild(el('p','news-date',isNaN(d)?n.date:d.toLocaleDateString(l==='en'?'en-GB':'pt-PT',{day:'numeric',month:'long',year:'numeric'})));}
     if(n.category)c.appendChild(el('p','news-cat',pick(n.category,l)));c.append(el('h3','',pick(n.title,l)),el('p','',pick(n.summary,l)));
     if(n.url){const a=el('a','card-link',l==='en'?'Read more':'Saber mais');a.href=n.url;a.target='_blank';a.rel='noopener';c.appendChild(a);}return c;}}
- ];
+ ].filter(section => document.getElementById(section.sec));
  Promise.all(sections.map(s=>load(s.file).then(d=>{s.items=Array.isArray(d[s.key])?d[s.key]:[];if(s.sort)s.items.sort(s.sort);if(s.limit)s.items=s.items.slice(0,s.limit);}))).then(()=>{
   const draw=()=>{const l=lang();sections.forEach(s=>{const sec=document.getElementById(s.sec),box=document.getElementById(s.box);if(!sec||!box)return;
    box.replaceChildren();sec.hidden=!s.items.length;s.items.forEach(i=>box.appendChild(s.card(i,l)));});};

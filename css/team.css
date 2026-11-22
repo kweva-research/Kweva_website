@@ -1,69 +1,66 @@
-/* Equipa: fotografia, nome, função e acesso à biografia. */
-body.team-page #team-grid{
- grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));
- gap:48px 40px;align-items:start;justify-content:start;
-}
-body.team-page #team-grid>.person-card{
- display:flex;flex-direction:column;height:auto;min-width:0;
- border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible;
-}
-body.team-page #team-grid>.person-card:hover,
-body.team-page #team-grid>.person-card:focus-within{transform:none;box-shadow:none}
-body.team-page #team-grid>.person-card>.person-photo{
- width:100%;aspect-ratio:1;border-radius:0;overflow:hidden;background:#eef2f2;
-}
-body.team-page #team-grid>.person-card>.person-photo img{
- width:100%;height:100%;object-fit:cover;object-position:center 25%;filter:grayscale(1);
-}
-body.team-page #team-grid>.person-card>.body{display:flex;flex-direction:column;flex:1;padding:28px 0 0}
-body.team-page #team-grid>.person-card>.body>h3{
- font-size:32px;line-height:1.25;margin:0 0 18px;color:var(--navy);
-}
-body.team-page #team-grid>.person-card>.body>.role{
- font-size:13px;line-height:1.7;letter-spacing:.16em;text-transform:uppercase;
- color:var(--navy);margin:0 0 22px;
-}
-body.team-page #team-grid .person-more{
- display:inline-flex;align-items:center;justify-content:flex-start;gap:12px;
- width:fit-content;max-width:100%;min-height:44px;margin-top:auto;padding:8px 4px 8px 0;
- color:var(--navy);font-size:19px;font-weight:700;line-height:1.4;
-}
-body.team-page #team-grid .person-more::after{
- content:'';flex:none;width:9px;height:9px;margin:0 3px 4px 0;
- border-top:2px solid currentColor;border-right:2px solid currentColor;
- transform:rotate(135deg);transition:translate .2s ease;
-}
-body.team-page #team-grid .person-more:hover{color:#087b80}
-body.team-page #team-grid .person-more:hover::after{translate:0 2px}
-@media(max-width:767px){
- body.team-page #team-grid{gap:40px}
- body.team-page #team-grid>.person-card>.body{padding-top:24px}
- body.team-page #team-grid>.person-card>.body>h3{font-size:28px;margin-bottom:16px}
-}
-@media(prefers-reduced-motion:reduce){
- body.team-page #team-grid .person-more::after{transition:none;translate:none}
+/* Cartões de equipa partilhados pelas páginas Sobre e Equipa. */
+.team-grid {
+ grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));
+ gap:28px;
+ align-items:start;
 }
 
-/* A biografia abre no fluxo do cartão, abaixo da função. */
-body.team-page #team-grid .person-profile-content{padding:0;min-width:0}
-body.team-page #team-grid .person-bio-paragraph{
- margin:0 0 20px;font-size:18px;line-height:1.65;color:var(--navy);
- overflow-wrap:break-word;
+.team-grid .person-card {
+ min-width:0;
+ overflow:hidden;
+ border:1px solid #dce8eb;
+ border-radius:12px;
+ background:#fff;
+ box-shadow:none;
 }
-body.team-page #team-grid .person-profile-content .person-links{
- display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:4px 0 20px;
- padding:0;border:0;
-}
-body.team-page #team-grid .person-profile-content .person-contact{margin-left:0!important}
-body.team-page #team-grid .person-more[aria-expanded="true"]::after{
- transform:rotate(-45deg);margin-bottom:0;
-}
-body.team-page #team-grid .person-more[aria-expanded="true"]:hover::after{translate:0 -2px}
-body.team-page #team-grid .person-more:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
 
-/* Perfil real também disponível se os dados não carregarem ou sem JavaScript. */
-body.team-page #team-grid .person-fallback>summary{list-style:none;cursor:pointer}
-body.team-page #team-grid .person-fallback>summary::-webkit-details-marker{display:none}
-.person-fallback .fallback-less,.person-fallback[open] .fallback-more{display:none}
-.person-fallback[open] .fallback-less{display:inline}
-body.team-page #team-grid .person-fallback[open]>.person-more::after{transform:rotate(-45deg)}
+.team-grid .person-card:hover {transform:none;box-shadow:none}
+.team-grid .person-photo {
+ display:grid;
+ place-items:center;
+ aspect-ratio:4/3;
+ background:#eaf5f1;
+}
+
+.team-grid .person-photo img,.staff-portrait {
+ width:100%;
+ object-fit:cover;
+ object-position:center 25%;
+}
+
+.team-grid .person-photo img {height:100%}
+.team-grid .person-card .body {padding:24px}
+.team-grid .person-card h3 {
+ margin:0 0 6px;
+ font-size:var(--type-card-title);
+ line-height:1.25;
+ color:var(--navy);
+}
+.team-grid .person-card .role {margin:0 0 12px;color:#435d68}
+.team-grid .person-more {
+ display:inline-flex;
+ width:auto;
+ min-height:44px;
+ align-items:center;
+ gap:10px;
+ padding:0;
+ color:#087b80;
+ font-weight:700;
+ text-decoration:underline;
+ text-underline-offset:4px;
+}
+.team-grid .person-more::after {content:none}
+.team-grid .person-more:focus-visible {outline:2px solid #087b80;outline-offset:4px}
+.team-grid .person-profile-content {overflow-wrap:break-word}
+
+.staff-profile {padding-block:var(--section-space)}
+.staff-back {display:inline-block;margin-bottom:32px;color:#087b80;font-weight:700}
+.staff-layout {display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);align-items:start;gap:clamp(28px,6vw,80px)}
+.staff-portrait {aspect-ratio:4/5;border-radius:8px}
+.staff-copy h1 {margin:0 0 28px;font-size:clamp(2.25rem,5vw,4rem);line-height:1.08}
+.staff-copy h2 {margin:0 0 12px;font-size:var(--type-card-title)}
+.staff-copy p:not(.eyebrow) {max-width:65ch;line-height:1.7}
+@media(max-width:767px) {
+ .staff-layout {grid-template-columns:1fr}
+ .staff-portrait {max-width:400px}
+}
