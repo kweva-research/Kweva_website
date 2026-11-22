@@ -249,3 +249,13 @@ body .partner-banner::after{content:none}
  body .sd-hero,body .sd-hero-layout,body.analytics-page .sd-hero,body.analytics-page .sd-hero-layout{min-height:0}
  body .sd-intro,body.academy-clean .ac-academy-hero .sd-intro,body.analytics-page .sd-hero .sd-intro{padding:32px 24px}
 }
+
+/* Dos dados às decisões: seção editorial com quatro cartões. */
+.data-decisions-section{background:#fff}
+.data-decisions-title{text-align:center;margin:0 0 52px}
+.data-decisions-grid{align-items:start}
+.data-decisions-card{min-width:0}
+.data-decisions-card h3{margin:0 0 24px;color:var(--navy)}
+.data-decisions-card p{min-height:126px;margin:0 0 40px;line-height:1.7;color:var(--text)}
+.data-decisions-card .card-link{color:#087b80;font-weight:700}
+@media(max-width:1000px){.data-decisions-card p{min-height:0}}
