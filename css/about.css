@@ -10,7 +10,7 @@
 .about-context-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:8%;align-items:center}
 .about-context-image{display:block;width:100%;height:auto}
 .about-context-copy{max-width:560px}
-.about-principles h2{max-width:650px}
+.about-principles h2{max-width:none;text-align:center;margin-inline:auto}
 .about-principle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px;margin-top:44px}
 .about-principle-grid article{border-top:var(--accent-rule);padding-top:24px}
 .about-principle-grid h3{font-size:var(--type-card-title);line-height:1.4;margin:0 0 14px}
@@ -19,11 +19,11 @@
 .about-page .about-team h2{font-size:var(--type-section-title);margin:0}
 .about-team .button{flex-shrink:0;font-size:14px}
 .about-vision-mission{padding-block:88px;background:#eef8f3}
-.about-vision-mission-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
-.about-vision-mission article{background:#fff;border-top:var(--accent-rule);padding:36px 40px;position:relative}
+.about-vision-mission-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:stretch}
+.about-vision-mission article{background:#fff;border-top:var(--accent-rule);padding:36px 40px;position:relative;min-height:280px}
 .about-card-icon{display:grid;place-items:center;width:58px;height:58px;margin-bottom:22px;border:1px solid #b8dada;border-radius:50%;background:#eef8f7;color:#087b80}
 .about-card-icon svg{width:28px;height:28px}
-.about-page .about-principle-grid article{position:relative;display:grid;grid-template-columns:50px minmax(0,1fr);column-gap:18px;align-items:start;border-top:0;padding:28px;border:1px solid #dce8eb;border-radius:14px;background:#fff}
+.about-page .about-principle-grid article{position:relative;display:grid;grid-template-columns:50px minmax(0,1fr);column-gap:18px;align-items:start;border-top:0;padding:28px;border:1px solid #dce8eb;border-radius:14px;background:#fff;min-height:190px}
 .about-value-icon{grid-row:1 / span 2;display:grid;place-items:center;width:50px;height:50px;border-radius:50%;background:#eef8f7;color:#087b80}
 .about-value-icon svg{width:24px;height:24px}
 .about-page .about-principle-grid article h3{margin:0 0 10px}
