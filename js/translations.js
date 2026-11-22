@@ -554,3 +554,19 @@ Object.assign(kwevaEnglish, {
   "Automação e monitoria": "Automation and monitoring",
   "Pedir uma proposta": "Request a proposal",
 });
+Object.assign(kwevaEnglish, {
+  "Implementamos sistemas digitais de recolha e gestão de dados, automatização de processos e soluções de monitoria.": "We implement digital data collection and management systems, process automation and monitoring solutions.",
+  "Todos os serviços": "All services",
+  "Ilustração de engrenagens digitais e automação de processos": "Illustration of digital gears and process automation",
+  "Como podemos apoiar": "How we can help",
+  "Implementação de formulários e plataformas digitais para recolher dados com maior consistência e controlo de qualidade.": "Implementation of digital forms and platforms to collect data with greater consistency and quality control.",
+  "Organização e integração de bases de dados e sistemas existentes para facilitar o acompanhamento de programas e operações.": "Organisation and integration of databases and existing systems to simplify programme and operational monitoring.",
+  "Automação de tarefas repetitivas, painéis de acompanhamento e soluções que tornam a informação útil para decisões.": "Automation of repetitive tasks, monitoring dashboards and solutions that turn information into a basis for decisions.",
+  "Conte-nos o processo que pretende digitalizar ou automatizar.": "Tell us about the process you would like to digitise or automate.",
+  "Fale connosco.": "Talk to us.",
+  "Nome *": "Name *",
+  "Telefone": "Phone",
+  "Mensagem *": "Message *",
+  "Enviar mensagem": "Send message",
+  "Proposta — Sistemas Digitais e Automação": "Proposal — Digital Systems & Automation",
+});
