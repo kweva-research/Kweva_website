@@ -260,3 +260,4 @@ body .partner-banner::after{content:none}
 .data-decisions-card .card-link{color:#087b80;font-weight:700}
 @media(max-width:1000px){.data-decisions-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:650px){.data-decisions-grid{grid-template-columns:1fr!important}}
+body .home-pillars-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
