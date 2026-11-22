@@ -63,3 +63,25 @@
  .about-intro-visual{min-height:220px}
  .about-intro-visual img{height:220px}
 }
+.about-breadcrumb{background:#edf7f6;border-bottom:1px solid #dbe7e8}
+.about-breadcrumb .container{min-height:56px;gap:10px;font-size:13px;color:#657982}
+.about-breadcrumb span[aria-hidden]{font-size:16px}
+.about-page .about-intro-layout{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px;max-width:1200px;margin-inline:auto}
+.about-page .about-intro-layout h2{max-width:600px;font-size:clamp(38px,4vw,54px);line-height:1.12}
+.about-intro-visual{height:360px;min-height:360px;border-radius:2px}
+.about-intro-visual img{height:360px;border-radius:2px}
+.about-vision-mission{padding-block:72px;background:#f3f8f7}
+.about-vision-mission-grid{max-width:1200px;margin-inline:auto;gap:28px}
+.about-vision-mission article{min-height:310px;padding:38px 42px;border:0;border-top:4px solid #087b80;border-radius:0;background:#fff}
+.about-vision-mission h2{font-size:29px}
+.about-principles{padding-block:88px}
+.about-principles h2{text-align:center!important;margin-bottom:48px!important}
+.about-page .about-principle-grid{max-width:1200px;margin-inline:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.about-page .about-principle-grid article{min-height:175px;grid-template-columns:46px minmax(0,1fr);gap:16px;padding:24px;border:1px solid #dde7e8;border-radius:2px;background:#fff}
+.about-value-icon{width:46px;height:46px;border-radius:50%}
+.about-context{padding-block:88px;background:#eef8f3}
+.about-context-layout{max-width:1200px;margin-inline:auto;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px}
+.about-team{border-top:1px solid #dce7e8}
+.about-team-inner{max-width:1200px;margin-inline:auto;border-top:0;padding-block:52px}
+@media(max-width:991px){.about-page .about-intro-layout{grid-template-columns:1fr}.about-intro-visual,.about-intro-visual img{height:320px}.about-vision-mission-grid{grid-template-columns:1fr}.about-page .about-principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){.about-page .about-intro-layout{gap:28px}.about-intro-visual,.about-intro-visual img{height:220px}.about-vision-mission article{min-height:0}.about-page .about-principle-grid{grid-template-columns:1fr}}
