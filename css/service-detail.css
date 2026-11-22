@@ -28,3 +28,5 @@
 
 .sd-subject-left .sd-photo{object-position:center top}
 @media(min-width:601px){.sd-field-photo .sd-photo{inset:0;width:100%;object-position:center 45%}}
+
+.sistemas-digitais-page .sd-photo{object-fit:cover;object-position:center 52%;transform:scale(1)}
