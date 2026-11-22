@@ -251,12 +251,12 @@ body .partner-banner::after{content:none}
 }
 
 /* Dos dados às decisões: seção editorial com quatro cartões. */
-.data-decisions-section{background:#fff}
+.data-decisions-section{display:block!important;visibility:visible!important;opacity:1!important}
 .data-decisions-title{text-align:center;margin:0 0 52px}
-.data-decisions-grid{align-items:start;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important}
-.data-decisions-card{min-width:0}
+.data-decisions-grid{align-items:start;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;visibility:visible!important}
+.data-decisions-card{display:block!important;visibility:visible!important}
 .data-decisions-card h3{margin:0 0 24px;color:var(--navy)}
 .data-decisions-card p{min-height:126px;margin:0 0 40px;line-height:1.7;color:var(--text)}
 .data-decisions-card .card-link{color:#087b80;font-weight:700}
-@media(max-width:1000px){body .data-decisions-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-@media(max-width:650px){body .data-decisions-grid{grid-template-columns:1fr!important}}
+@media(max-width:1000px){.data-decisions-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:650px){.data-decisions-grid{grid-template-columns:1fr!important}}
