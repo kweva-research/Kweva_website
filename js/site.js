@@ -188,3 +188,12 @@ document.addEventListener('click', event => {
  document.querySelector('.menu-button')?.addEventListener('click', () => closeAll());
  window.matchMedia('(max-width: 1100px)').addEventListener('change', () => { closeAll();closeNavigation(); });
 })();
+const digitalSystemsLink = document.querySelector('#nav-services a[href*="sistemas-digitais"]');
+if (!digitalSystemsLink) {
+ [...document.querySelectorAll('#nav-services')].forEach(menu => {
+  const link = document.createElement('a');
+  link.href = 'sistemas-digitais.html';
+  link.textContent = 'Sistemas Digitais e Automação';
+  menu.append(link);
+ });
+}
