@@ -1,5 +1,46 @@
 // Original Portuguese text remains in the HTML so every page works without JavaScript.
 const kwevaEnglish = {
+  "Todos os direitos reservados.": "All rights reserved.",
+  "Saber mais": "Learn more",
+  "Investigação": "Research",
+  "Conhecer a Kweva": "Get to know Kweva",
+  "Solicitar proposta": "Request a proposal",
+  "Voltar às formações": "Back to courses",
+  "Conheça as áreas de colaboração e partilhe o seu percurso com a Kweva.": "Explore ways to work with Kweva and tell us about your experience.",
+  "Política de privacidade": "Privacy policy",
+  "Privacidade e dados pessoais": "Privacy and personal data",
+  "Quem recebe os seus dados": "Who receives your data",
+  "A Kweva Research & Consulting recebe os dados enviados pelos formulários. Para questões de privacidade, contacte valdemiroeusebio2@gmail.com.": "Kweva Research & Consulting receives the data submitted through the forms. For privacy enquiries, contact valdemiroeusebio2@gmail.com.",
+  "O que recolhemos e para quê": "What we collect and why",
+  "Os formulários recolhem os dados que introduz para responder a contactos, gerir pedidos de formação ou apreciar candidaturas. As candidaturas profissionais incluem o CV anexado. Evite enviar dados sensíveis desnecessários.": "We collect the information you enter in our forms to respond to enquiries, manage training requests or review applications. Job applications include the attached CV. Please avoid sending unnecessary sensitive data.",
+  "Como os formulários funcionam": "How the forms work",
+  "O FormSubmit processa os envios e encaminha os dados e anexos para o e-mail da Kweva. Os dados deixam o site e ficam sujeitos também às condições desse serviço e do fornecedor de e-mail.": "FormSubmit processes submissions and forwards the data and attachments to Kweva by email. Once the data leaves the website, it is also subject to the terms of FormSubmit and the email provider.",
+  "Preferência de idioma e serviços externos": "Language preference and external services",
+  "O navegador guarda a sua preferência de idioma no armazenamento local. Pode removê-la nas definições do navegador. O site carrega fontes do Google Fonts. Ao seguir links para redes sociais, Gmail ou WhatsApp, aplica-se a política da plataforma escolhida.": "Your browser saves your language preference in local storage. You can remove it in your browser settings. The site loads fonts from Google Fonts. When you follow links to social media, Gmail or WhatsApp, the chosen platform’s policy applies.",
+  "Conservação e pedidos sobre os dados": "Data retention and requests",
+  "Os dados são usados para tratar o pedido a que se destinam. Pode contactar a Kweva para solicitar informação sobre a conservação, correcção ou eliminação dos dados enviados. A análise do pedido considera as obrigações aplicáveis.": "We use the data to process the request for which it was submitted. You can contact Kweva for information about retaining, correcting or deleting the data you sent. We consider applicable obligations when reviewing your request.",
+  "Política de privacidade do FormSubmit": "FormSubmit privacy policy",
+  "Análise demonstrativa": "Illustrative analysis",
+  "O que os censos mostram sobre Moçambique?": "What do the censuses tell us about Mozambique?",
+  "Uma leitura descritiva da evolução da população entre os censos de 1980 e 2017.": "A descriptive overview of population change between the 1980 and 2017 censuses.",
+  "Exemplo demonstrativo com dados públicos. Não corresponde a um projecto contratado nem a uma parceria com o INE ou o UNFPA.": "Illustrative example using public data. It was prepared independently of any commissioned project or partnership with INE or UNFPA.",
+  "A pergunta": "The question",
+  "Como evoluiu a população recenseada e o que é necessário considerar ao usar estes dados no planeamento?": "How did the census population change, and what should we consider when using these data for planning?",
+  "População por ano de censo": "Population by census year",
+  "Milhões de habitantes; valores arredondados na fonte.": "Population in millions, rounded in the source.",
+  "Valores usados no gráfico": "Values used in the chart",
+  "Ano": "Year",
+  "População (milhões)": "Population (millions)",
+  "Fonte: INE, resultados dos censos, conforme síntese publicada pelo UNFPA em 29 de abril de 2019.": "Source: INE census results, as summarised by UNFPA on 29 April 2019.",
+  "Consultar a fonte": "View the source",
+  "O que observamos": "What we observe",
+  "Os valores publicados aumentam de 12,1 milhões em 1980 para 27,9 milhões em 2017. A diferença entre os valores arredondados é de aproximadamente 15,8 milhões.": "The published figures rise from 12.1 million in 1980 to 27.9 million in 2017. The difference between the rounded figures is approximately 15.8 million.",
+  "Como interpretar": "How to interpret the figures",
+  "O aumento sugere a necessidade de actualizar os denominadores usados no planeamento. Para distribuir recursos, é necessário complementar estes totais com informação por território, idade e acesso a serviços.": "The increase suggests that the denominators used for planning need updating. Resource allocation requires supplementing these totals with data on geography, age and access to services.",
+  "Método e limites": "Method and limitations",
+  "Comparação descritiva de quatro totais arredondados. Os intervalos entre censos são diferentes; o gráfico não representa crescimento anual. Os valores são históricos, não estimativas da população actual, e não permitem identificar causas do crescimento.": "The analysis compares four rounded totals. The intervals between censuses vary, so the chart shows population totals at each census. These historical figures cannot estimate the current population or identify the causes of growth.",
+  "Descarregar os dados (CSV)": "Download the data (CSV)",
+  "Quer responder a uma pergunta com dados?": "Want to answer a question with data?",
   "Acompanhe as oportunidades de colaboração com a Kweva.": "Follow opportunities to work with Kweva.",
   "Nesta página": "On this page",
   "Equipa": "Team",
@@ -419,7 +460,7 @@ const kwevaEnglish = {
   "Apoiamos a preparação de inquéritos, instrumentos de recolha e bases de dados consistentes para o seu estudo.": "We support survey preparation, data collection instruments and consistent datasets for your study.",
   "Pesquisa": "Research",
   "Desenhamos estudos quantitativos e qualitativos para compreender o contexto e responder às perguntas do seu projecto.": "We design quantitative and qualitative studies to understand the context and answer your project questions.",
-  "Análise de dados e IA": "Analytics and AI",
+  "Análise de dados e IA": "Data analytics and AI",
   "Exploramos aplicações de inteligência artificial na análise de texto, organização de dados e síntese de evidência, com revisão humana.": "We explore applications of artificial intelligence in text analysis, data organisation and evidence synthesis, with human review.",
   "Implementamos e integramos sistemas digitais de recolha e gestão de dados, automatizamos processos e desenvolvemos soluções de monitoria.": "We implement and integrate digital data collection and management systems, automate processes, and develop monitoring solutions.",
   "Uma consultora moçambicana.": "A Mozambican consultancy.",
@@ -479,7 +520,6 @@ Object.assign(kwevaEnglish, {
   "Exploramos aplicações de inteligência artificial na análise de texto, organização de dados e síntese de evidência, com revisão humana.": "We explore applications of artificial intelligence in text analysis, data organisation and evidence synthesis, with human review."
 });
 
-Object.assign(kwevaEnglish, {"Análise de dados e IA": "Data analytics and AI"});
 
 // Analytics: photographic sections and expandable applications.
 Object.assign(kwevaEnglish, {

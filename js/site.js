@@ -90,7 +90,7 @@ function setLanguage(lang) {
  translateAttributes(document, lang);
  metaRecords.forEach(([element, original]) => { element.content = lang === 'en' ? translate(original) : original; });
  const pageNames = { 'Início':'Home', 'Sobre':'About Us', 'Sobre nós':'About Us', 'Serviços':'Services', 'Projectos':'Projects', 'Contacto':'Contact', 'Equipa':'Team', 'Team':'Team', 'Kweva Academy':'Kweva Academy', 'Inscrição':'Enrolment', 'FAQ':'Frequently asked questions', 'Página não encontrada':'Page not found', 'Carreiras':'Careers', 'Trabalhar na Kweva':'Working at Kweva', 'Vagas':'Vacancies', 'Candidatura espontânea':'Spontaneous application', 'Privacidade e dados pessoais':'Privacy and personal data', 'O que os censos mostram sobre Moçambique?':'What do the censuses tell us about Mozambique?', 'Estudos e inquéritos':'Studies and surveys', 'Estatística e dados':'Statistics and data', 'Monitoria e avaliação':'Monitoring and evaluation', 'Formação e apoio técnico':'Training and technical support' };
- document.title = (lang === 'en' ? (pageNames[originalPageTitle] || originalPageTitle) : originalPageTitle) + ' | Kweva Research & Consulting';
+ document.title = (lang === 'en' ? (pageNames[originalPageTitle] || translate(originalPageTitle)) : originalPageTitle) + ' | Kweva Research & Consulting';
  const ogTitle = document.querySelector('meta[property="og:title"]');
  if (ogTitle) ogTitle.content = document.title;
  const ogLocale = document.querySelector('meta[property="og:locale"]');
